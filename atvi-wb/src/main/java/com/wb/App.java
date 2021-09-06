@@ -29,7 +29,6 @@ public class App {
 				cadastro.cadastrar();
 				break;
 			case 2:
-				System.out.println("nada por hora");
 				break;
 			default:
 				System.out.println("Operação não entendida");
