@@ -4,6 +4,8 @@ import com.wb.io.Entrada;
 import com.wb.modelo.Empresa;
 import com.wb.negocio.Cadastro;
 import com.wb.negocio.CadastroCliente;
+import com.wb.negocio.Listagem;
+import com.wb.negocio.ListarTodosClientes;
 
 public class App {
 	public static void main(String[] args) {
@@ -29,6 +31,8 @@ public class App {
 				cadastro.cadastrar();
 				break;
 			case 2:
+				Listagem listagem = new ListarTodosClientes(empresa.getClientes());
+				listagem.listar();
 				break;
 			default:
 				System.out.println("Operação não entendida");
